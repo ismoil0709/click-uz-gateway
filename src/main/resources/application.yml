@@ -1,0 +1,16 @@
+server:
+  port: 1111
+spring:
+  application:
+    name: click-uz-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8741/eureka
+
